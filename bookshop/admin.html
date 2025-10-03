@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNN Book Availability — Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="admin-app" class="container">
+    <header>
+      <h1>📖 Admin Dashboard</h1>
+      <p class="muted">Add, update or remove book records. Changes reflect for students immediately (in this browser).</p>
+    </header>
+
+    <section class="card">
+      <h3>Add New Book</h3>
+      <div class="form-grid">
+        <input id="a_title" placeholder="Title" />
+        <input id="a_author" placeholder="Author" />
+        <input id="a_course" placeholder="Course code (optional)" />
+        <input id="a_edition" placeholder="Edition (optional)" />
+        <input id="a_qty" type="number" min="0" placeholder="Quantity (0 = out of stock)" />
+      </div>
+      <div class="form-actions">
+        <button id="addBookBtn">Add Book</button>
+        <button id="clearStoreBtn" class="danger">Reset sample data</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Books in Store</h3>
+      <div id="adminList" class="card-list"></div>
+    </section>
+
+    <footer class="muted small">No admin login yet — this is a demo. For production, add authentication and a server DB.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

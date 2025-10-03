@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNN Book Availability — Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="student-app" class="container">
+    <header>
+      <h1>📚 UNN Book Availability</h1>
+      <p class="muted">Search textbooks by title, author or course code before you go to the bookshop.</p>
+    </header>
+
+    <section class="search-area">
+      <input id="searchBox" placeholder="Search by title, author or course (e.g. 'Engineering Maths' or 'CHEM101')" />
+      <button id="clearBtn" title="Clear search">Clear</button>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <div id="resultList" class="card-list">
+        <!-- results appear here -->
+      </div>
+    </section>
+
+    <footer class="muted small">Tip: Open the Admin page (admin.html) to add or update stock — changes are saved locally in your browser.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
