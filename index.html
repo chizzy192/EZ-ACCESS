@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="global-padding">
         <img 
             src="./images//logo.png" 
             alt="logo"
@@ -15,16 +15,94 @@
 
         <nav>
             <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#TEAM">Team</a></li>
+                <li class="signup"><a href="./signup.html">Sign Up</a></li>
             </ul>
-            <a href="./signup.html">
-                SignUp
-            </a>
         </nav>
     </header>
-    <main>
+    <main class="global-padding">
+        <section 
+            class="home"
+        >
+            <figure>
+                <figcaption>
+                    <h1>
+                        Welcome to 
+                        <span
+                        class="green">
+                            EZ Access
+                        </span>
+                    </h1>
+                    <p>
+                        Discover your next favorite book in our carefully curated collection. From bestsellers to hidden gems, we bring you the world of literature at your fingertips with real-time availability and amazing clearance deals.
+                    </p>
+                    <div class="button">
+                        <button>
+                        learn more
+                    </button>
+                    <button>
+                        learn more
+                    </button>
+                    </div>
+                </figcaption>
+                <img 
+                    src="./images/hero.jpg" 
+                    alt="hero"
+                    class="hero"
+                />
+            </figure>   
+        </section>
+        <section
+            class="about"
+            id="about"
+        >
+            <h2>About EZ Acess</h2>
+            <p>
+                BookHub is more than just a bookstore – we're a community of book lovers dedicated to connecting readers with their perfect literary match. Our project focuses on making books accessible, affordable, and always available.
+            </p>
+        </section>
+        <section
+            class="services"
+            id="services"
+        >
+            <div class="services-heading">
+                <h2>
+                    Our Services
+                </h2>
+                <p>
+                    We offer comprehensive book services to enhance your reading experience and help you find exactly what you're looking for.
+                </p>
+            </div>
 
+            <div class="container">
+                <section class="book">
+                    <div class="box"></div>
+                    <h3>
+                        Book Availability
+                    </h3>
+                    <p>
+                        Instantly check if your desired books are in stock across all our locations. Our real-time inventory system ensures you never waste time looking for unavailable titles.
+                    </p>
+                    <button>
+                        <a href="./bookshop.html"> Check Availability</a>
+                    </button>
+                </section>
+                <section class="book">
+                    <div class="box"></div>
+                    <h3>
+                        Clearance Deals
+                    </h3>
+                    <p>
+                        Discover amazing deals on books through our partner clearance site. Find rare books, overstock items, and special editions at unbeatable prices.
+                    </p>
+                    <button>
+                        <a href="./clearance.html"> Check Availability</a>
+                    </button>
+                </section>
+            </div>
+        </section>
     </main>
     <footer>
 
