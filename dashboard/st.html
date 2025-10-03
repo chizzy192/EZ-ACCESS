@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Student Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Profile Section (Read-Only for Student) -->
+  <section class="profile">
+    <h2>My Profile</h2>
+    <p><strong>Name:</strong> <span id="studentName">John Doe</span></p>
+    <p><strong>Reg No:</strong> <span id="studentReg">2020/123456</span></p>
+    <p><strong>Department:</strong> <span id="studentDept">Computer Science</span></p>
+    <p><strong>Faculty:</strong> <span id="studentFaculty">Physical Sciences</span></p>
+    <p class="note">* Profile is managed by Admin</p>
+  </section>
+
+  <!-- Upload Section -->
+  <section class="upload">
+    <h2>Upload Documents</h2>
+    <form id="uploadForm">
+      <input type="file" id="documentUpload" multiple><br><br>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <!-- Uploaded Documents Preview -->
+  <section class="uploaded-files">
+    <h2>My Uploaded Documents</h2>
+    <ul id="fileList">
+      <li>No files uploaded yet.</li>
+    </ul>
+  </section>
+
+  <script src="st.js"></script>
+</body>
+</html>
